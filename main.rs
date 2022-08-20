@@ -15,7 +15,6 @@ fn firstFunction() {
     println!("{:?}", result);
 }
 struct suitPieces{
-    // matching expression technique (Rust)
     fn setSuit(&mut self){
         self.designerSuit = designerSuit
         self.regularSuit = regularSuit
@@ -25,68 +24,131 @@ struct suitPieces{
         self.topJacket = topJacket
     }
     fn madeDesigner(self) -> str {
-        match designer_Suit {
-            'Ermenegildo Zegna' => designer_suit,
-            'Gucci' => designer_suit
-            'Dolce & Gabbana' => designer_suit 
-            'Brioni' => designer_suit 
-            'Saint Laurent' => designer_suit
-            'Givenchy' => designer_suit 
-            'Prada' => designer_suit 
-            'Valentino' => designer_suit 
-            'Bottega Veneta' => designer_suit 
-            'Hugo Boss' => designer_suit
-            'Dior' => designer_suit
+        match designerSuit {
+            'Ermenegildo Zegna' => designerSuit,
+            'Gucci' => designerSuit,
+            'Angelico' => designerSuit, 
+            'Brioni' => designerSuit, 
+            'Saint Laurent' => designerSuit,
+            'Givenchy' => designerSuit, 
+            'Prada' => designerSuit, 
+            'Valentino' => designerSuit, 
+            'Bottega Veneta' => designerSuit,
+            'Hugo Boss' => designerSuit,
+            'Dior' => designerSuit,
             '_' => panic!("Invalid suit title given.")
-        match dressShirt {}
-        match dressPants {}
-        match dressTie {}
-        match topJacket {}
+        match dressShirt {
+            'Atu Body Couture' => dressShirt,
+            'Prada' => dressShirt,
+            'Isaac Sellam Experience' => dressShirt,
+            'Thom Browne' => dressShirt, 
+            'Eleventy' => dressShirt, 
+            'Saint Laurent' => dressShirt,
+            'Valentino' => dressShirt, 
+            'Giorgio Armani' => dressShirt, 
+            'Versace' => dressShirt, 
+            'Salvatore Ferragamo' => dressShirt,
+            'Philipp Plein' => dressShirt,
+            'Brunello Cucinelli' => dressShirt,
+            '_' => panic!("Invalid dress shirt title given.")
+        }
+        match dressPants {
+            'Giuliva Heritage' => dressShirt,
+            'Thom Sweeney' => dressShirt,
+            'Umit Benan B+' => dressShirt,
+            'Lemaire' => dressShirt, 
+            'Tom Ford' => dressShirt, 
+            'Saint Laurent' => dressShirt,
+            'Valentino' => dressShirt, 
+            'Giorgio Armani' => dressShirt, 
+            'Moncler' => dressShirt, 
+            'Ralph Lauren Purple Label' => dressShirt,
+            'Barena Venezia' => dressShirt,
+            'Jil Sander' => dressShirt
+            '_' => panic!("Invalid dress pants title given.")
+        }
+        match dressTie {
+            'Charvet' => dressTie,
+            'Tom Ford' => dressTie,
+            'Gucci' => dressTie,
+            'Brunello Cucinelli' => dressTie, 
+            'Tom Ford' => dressTie, 
+            'Gucci' => dressTie, 
+            '_' => panic!("Invalid dress tie title given.")
+        }
+        match topJacket {
+            'Brioni' => topJacket,
+            'Dolce & Gabbana' => topJacket, 
+            'Ermenegildo Zegna' => topJacket, 
+            'Prada' => topJacket,
+            'Philipp Plein' => topJacket, 
+            'Brunello Cucinelli' => topJacket, 
+            'Givenchy' => topJacket, 
+            'Thom Browne' => topJacket,
+            'Maison Margiela' => topJacket,
+            'Canali' => topJacket,
+            'Etro' => topJacket,
+            'Lemaire' => topJacket,
+            'Tonello' => topJacket
+            '_' => panic!("Invalid top jacket title given.")
+        }
+        }
         }
     fn madeRegular(self) -> str {
         match regularSuit {
-            '' => regularSuit,
-            '' => regularSuit
-            '' => regularSuit 
-            '' => regularSuit 
-            '' => regularSuit
-            '' => regularSuit 
-            '' => regularSuit 
-            '' => regularSuit 
-            '' => regular_suit,
+            'Topman' => regularSuit,
+            'Ted Baker London' => regularSuit
+            'Peter Millar' => regularSuit 
+            'River Island' => regularSuit 
+            'Johnny Bigg' => regularSuit
+            'Jack Victor' => regularSuit 
+            'Suitsupply' => regularSuit 
             '_' => panic!("Invalid suit title given.")
-        match dressShirt {}
-        match dressPants {}
-        match dressTie {}
-        match topJacket {}
+        match dressShirt {
+            'Theory' => dressShirt,
+            'Officine Generale' => dressShirt
+            'Emanuel Berg' => dressShirt 
+            'Eton' => dressShirt 
+            'Canali' => dressShirt
+            'Reiss' => dressShirt 
+            '_' => panic!("Invalid dress shirt title given.")
+        }
+        match dressPants {
+            'Versace' => dressPants,
+            'Loro Piana' => dressPants
+            'Boglioli' => dressPants 
+            'Golden Goose' => dressPants 
+            'Samuelsohn' => dressPants
+            'Brax' => dressPants 
+            'Berle' => dressPants 
+            '_' => panic!("Invalid dress pants title given.")
+        }
+        match dressTie {
+            'Zegna' => dressTie,
+            'Brioni' => dressTie
+            'Ralph Lauren Purple Label' => dressTie 
+            'Thom Browne' => dressTie 
+            'Dries Van Noten' => dressTie
+            'Nordstrom' => dressTie 
+            'David Donahue' => dressTie 
+            '_' => panic!("Invalid dress pants title given.")
+
+        }
+        match topJacket {
+            'River Island' => topJacket,
+            'Topman' => topJacket
+            'ASOS Design' => topJacket 
+            'Selected Homme' => topJacket 
+            'Reiss' => topJacket
+            '_' => panic!("Invalid dress pants title given.")
+        }
         }
     
 
-    enum SuitCircumstances{
-        casualSuit,
-        professionalSuit,}
-    
-        fn suitSetting -> Result<(), askedCircumstances> {
-            if environment == "ok"{
-                Err(AskedQuestions::("Maintain a healthy diet and exercise frequently.".to_string()))
-            }
-            else if environment == "not satisfied"{
-                Err(AskedQuestions::"What current symptoms are you feeling, is it physically or mental?".to_string())
-            }
-            } else{
-                Err(AskedQuestions::"The doctor is busy with another patient or there are too many patients causing a longer wait time.".to_string())
-            }
 
-        }
-
-
-
-
-
-    fn output(first_name: String, operator: char, last_name: String, result: f32) -> String {
-        format("{} {} {} = {}", first_name, operator, last_name})
-        format("{} = {}",currentAppointment)
-        println!("{:?}",output(first_name, operator, last_name, result));
-        println!("{:?}",output(currentAppointment));
+    fn output(complete_designer_suit: String, complete_regular_suit: String, result: String) -> String {
+        format("{} {} {} = {}", complete_designer_suit, complete_regular_suit})
+        format("{} = {}",suitSetting)
+        println!("{:?}",output(complete_designer_suit, complete_regular_suit, result));
     }
 }
