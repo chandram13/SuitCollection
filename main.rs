@@ -5,122 +5,68 @@ use std::env::{args, Args}
 fn firstFunction() {
     let mut mychosenSuit: Args = args();
 
-    let designer_suit = mychosenSuit.nth(0).unwrap(); // use unwrap to get self
-    let regular_suit = args.nth(2).unwrap().chars();.next().unwrap();
+    let complete_designer_suit = mychosenSuit.nth(0).unwrap(); // use unwrap to get self
+    let complete_regular_suit = args.nth(2).unwrap().chars();.next().unwrap();
 
-    let designer_suit = first.parse::<f32>().unwrap();
-    let regular_suit = second.parse::<f32>().unwrap()
-    let result = operate(designer_suit, regular_suit);
+    let complete_designer_suit = first.parse::<f32>().unwrap();
+    let complete_regular_suit = second.parse::<f32>().unwrap()
+    let result = operate(complete_designer_suit, complete_regular_suit);
 
     println!("{:?}", result);
 }
 struct suitPieces{
     // matching expression technique (Rust)
-    fn suitDifferences(operator: String, designer_suit: str, regular_suit: str) -> str {
-        match suitDifferences {
-            '' => designer_suit,
-            '' => designer_suit
-            '' => designer_suit 
-            '' => designer_suit 
-            '' => designer_suit
-            '' => designer_suit 
-            '' => designer_suit 
-            '' => designer_suit 
-            '' => regular_suit,
-            '' => first_name + last_name,
-            '' => first_name + last_name,
-            '' => first_name + last_name,
-            '' => first_name + last_name,
-            '' => first_name + last_name,
-            '' => first_name + last_name,
+    fn setSuit(&mut self){
+        self.designerSuit = designerSuit
+        self.regularSuit = regularSuit
+        self.dressShirt = dressShirt
+        self.dressPants = dressPants
+        self.dressTie = dressTie
+        self.topJacket = topJacket
+    }
+    fn madeDesigner(self) -> str {
+        match designer_Suit {
+            'Ermenegildo Zegna' => designer_suit,
+            'Gucci' => designer_suit
+            'Dolce & Gabbana' => designer_suit 
+            'Brioni' => designer_suit 
+            'Saint Laurent' => designer_suit
+            'Givenchy' => designer_suit 
+            'Prada' => designer_suit 
+            'Valentino' => designer_suit 
+            'Bottega Veneta' => designer_suit 
+            'Hugo Boss' => designer_suit
+            'Dior' => designer_suit
             '_' => panic!("Invalid suit title given.")
+        match dressShirt {}
+        match dressPants {}
+        match dressTie {}
+        match topJacket {}
         }
-        fn dressShirt(operator: String, designer_suit: str, regular_suit: str) -> str {
-            match suitDifferences {
-                '' => designer_suit,
-                '' => designer_suit
-                '' => designer_suit 
-                '' => designer_suit 
-                '' => designer_suit
-                '' => designer_suit 
-                '' => designer_suit 
-                '' => designer_suit 
-                '' => regular_suit,
-                '' => first_name + last_name,
-                '' => first_name + last_name,
-                '' => first_name + last_name,
-                '' => first_name + last_name,
-                '' => first_name + last_name,
-                '' => first_name + last_name,
-                '_' => panic!("Invalid suit title given.")
-                '0:00' => panic!("Invalid suit title given.")
-            }
-            fn dressPants(operator: String, designer_suit: str, regular_suit: str) -> str {
-                match suitDifferences {
-                    '' => designer_suit,
-                    '' => designer_suit
-                    '' => designer_suit 
-                    '' => designer_suit 
-                    '' => designer_suit
-                    '' => designer_suit 
-                    '' => designer_suit 
-                    '' => designer_suit 
-                    '' => regular_suit,
-                    '' => first_name + last_name,
-                    '' => first_name + last_name,
-                    '' => first_name + last_name,
-                    '' => first_name + last_name,
-                    '' => first_name + last_name,
-                    '' => first_name + last_name,
-                    '_' => panic!("Invalid suit title given.")
-                    '0:00' => panic!("Invalid suit title given.")
-                }
-            fn signatureTie(operator: String, designer_suit: str, regular_suit: str) -> str {
-                match suitDifferences {
-                    '' => designer_suit,
-                    '' => designer_suit
-                    '' => designer_suit 
-                    '' => designer_suit 
-                    '' => designer_suit
-                    '' => designer_suit 
-                    '' => designer_suit 
-                    '' => designer_suit 
-                    '' => regular_suit,
-                    '' => first_name + last_name,
-                    '' => first_name + last_name,
-                    '' => first_name + last_name,
-                    '' => first_name + last_name,
-                    '' => first_name + last_name,
-                    '' => first_name + last_name,
-                    '_' => panic!("Invalid suit title given.")
-                        '0:00' => panic!("Invalid suit title given.")
-                    }
-            fn topJacket(operator: String, designer_suit: str, regular_suit: str) -> str {
-                match suitDifferences {
-                    '' => designer_suit,
-                    '' => designer_suit
-                    '' => designer_suit 
-                    '' => designer_suit 
-                    '' => designer_suit
-                    '' => designer_suit 
-                    '' => designer_suit 
-                    '' => designer_suit 
-                    '' => regular_suit,
-                    '' => first_name + last_name,
-                    '' => first_name + last_name,
-                    '' => first_name + last_name,
-                    '' => first_name + last_name,
-                    '' => first_name + last_name,
-                    '' => first_name + last_name,
-                    '_' => panic!("Invalid suit title given.")
-                            '0:00' => panic!("Invalid suit title given.")
-                        }
+    fn madeRegular(self) -> str {
+        match regularSuit {
+            '' => regularSuit,
+            '' => regularSuit
+            '' => regularSuit 
+            '' => regularSuit 
+            '' => regularSuit
+            '' => regularSuit 
+            '' => regularSuit 
+            '' => regularSuit 
+            '' => regular_suit,
+            '_' => panic!("Invalid suit title given.")
+        match dressShirt {}
+        match dressPants {}
+        match dressTie {}
+        match topJacket {}
+        }
+    
 
     enum SuitCircumstances{
         casualSuit,
         professionalSuit,}
     
-        fn suitTiming -> Result<(), askedCircumstances> {
+        fn suitSetting -> Result<(), askedCircumstances> {
             if environment == "ok"{
                 Err(AskedQuestions::("Maintain a healthy diet and exercise frequently.".to_string()))
             }
